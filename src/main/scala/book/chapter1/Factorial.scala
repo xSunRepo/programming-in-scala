@@ -24,4 +24,5 @@ object Factorial extends App {
   println(s"Factorial of 3: ${factorialOf(3)}")
   println(s"Factorial of 10: ${factorialOf(10)}")
   println(s"Factorial of 10: ${factorialOf(30)}")
+
 }
