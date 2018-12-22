@@ -1,0 +1,11 @@
+# IntelliJ
+.idea/
+out/
+*.iws
+
+# SBT
+target/
+
+# Scala
+*.class
+*.log
