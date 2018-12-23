@@ -5,7 +5,9 @@ out/
 
 # SBT
 target/
+project/target/
 
 # Scala
 *.class
+*.cache
 *.log
