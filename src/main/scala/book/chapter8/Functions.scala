@@ -1,5 +1,7 @@
 package book.chapter8
 
+import util.DirectoryUtils
+
 import scala.io.Source
 
 object Functions extends App{
@@ -14,7 +16,7 @@ object Functions extends App{
     }
   }
 
-  processFile("C:\\Users\\Sun\\IdeaProjects\\programming-in-scala\\src\\main\\scala\\book\\chapter8\\Functions.scala", 45)
+  processFile(DirectoryUtils.getClassPath(getClass), 45)
 
   // Function and function values are like class to objects (class instances)
   def sum(x: Int, y: Int, z: Int): Int = x + y + z
