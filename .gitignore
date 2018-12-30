@@ -11,3 +11,5 @@ project/target/
 *.class
 *.cache
 *.log
+
+*.txt

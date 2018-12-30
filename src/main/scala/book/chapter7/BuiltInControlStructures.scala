@@ -2,6 +2,8 @@ package book.chapter7
 
 import java.io.File
 
+import util.DirectoryUtils
+
 import scala.io.Source
 
 object BuiltInControlStructures extends App{
@@ -21,8 +23,7 @@ object BuiltInControlStructures extends App{
       if (line.matches(pattern))
     } yield trimmed
   }
-
-  grep("C:\\Users\\Nullid\\IdeaProjects\\programming-in-scala\\src\\main\\scala\\book\\chapter7", ".*for.*").foreach(println)
+  grep(DirectoryUtils.getCurrentDirectory(getClass()), ".*for.*").foreach(println)
 
   /*
   Any exception that are subclass of java.lang.Error or RunTimeException are unchecked exception.
