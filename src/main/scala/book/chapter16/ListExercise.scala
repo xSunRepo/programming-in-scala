@@ -19,7 +19,7 @@ object ListExercise {
   }
 
   def mergeSort[T](less: (T, T) => Boolean)(list: List[T]): List[T] = {
-    def merge[T](xs: List[T], ys: List[T]): List[T] = {
+    def merge(xs: List[T], ys: List[T]): List[T] = {
       (xs, ys) match {
         case (Nil, _) => ys
         case (_, Nil) => xs
