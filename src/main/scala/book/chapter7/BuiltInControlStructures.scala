@@ -17,13 +17,13 @@ object BuiltInControlStructures extends App{
   def grep(direcotry: String, pattern: String)= {
     for {
       file <- readFiles(direcotry)
-      if (file.getName.endsWith("scala"))
+      if file.getName.endsWith("scala")
       line <- readLines(file)
       trimmed = line.trim
-      if (line.matches(pattern))
+      if line.matches(pattern)
     } yield trimmed
   }
-  grep(DirectoryUtils.getCurrentDirectory(getClass()), ".*for.*").foreach(println)
+  //grep(DirectoryUtils.getCurrentDirectory(this.getClass()), ".*for.*").foreach(println)
 
   /*
   Any exception that are subclass of java.lang.Error or RunTimeException are unchecked exception.
@@ -41,9 +41,9 @@ object BuiltInControlStructures extends App{
   Scala try catch statement differs from java because values in the finally block doesn't override value in the try or catch block.
   Finally block is meant to ensure some side effects happen, such as cleaning up resources.
    */
-  val one = try 1 finally 2
-  def two: Int = try return 1 finally return 2
-  println(two)
+  // val one = try 1 finally 2
+  // def two: Int = try return 1 finally return 2
+  // println(two)
 
   /*
   Scala doesn't support continue and break in java;
