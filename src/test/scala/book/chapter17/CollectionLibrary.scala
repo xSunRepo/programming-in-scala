@@ -1,4 +1,4 @@
-package chapter17
+package book.chapter17
 
 import org.scalatest.{FlatSpec, Matchers}
 

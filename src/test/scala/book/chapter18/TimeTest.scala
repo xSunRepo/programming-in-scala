@@ -1,4 +1,4 @@
-package chapter18
+package book.chapter18
 
 import book.chapter18.Time
 import org.scalatest.{FlatSpec, Matchers}

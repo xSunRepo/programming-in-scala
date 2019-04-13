@@ -1,4 +1,4 @@
-package chapter18
+package book.chapter18
 
 import book.chapter18.Thermometer
 import org.scalatest.{FlatSpec, Matchers}

@@ -1,4 +1,4 @@
-package chapter19
+package book.chapter19
 
 import book.chapter19.FunctionalQueue
 import org.scalatest.{FlatSpec, Matchers}
